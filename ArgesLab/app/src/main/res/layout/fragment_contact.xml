@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.ContentFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.ContactFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/contact_map"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arges_in_map"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline3"
+                app:layout_constraintGuide_percent="0.6"
+                android:orientation="horizontal"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/contact_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline3"
+                android:layout_marginTop="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/avenir_heavy"
+                android:textAlignment="center"
+                android:text="@string/contacto_title"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/contact_fb"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintEnd_toEndOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/contact_description"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb_contact"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/contact_insta"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintEnd_toEndOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/contact_description"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/insta_contact"
+                />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/contact_cel"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintEnd_toEndOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/contact_description"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_call"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/contact_mail"
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintEnd_toEndOf="@+id/guideline8"
+                app:layout_constraintTop_toBottomOf="@+id/contact_description"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mail"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/contact_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline4"
+                android:layout_marginTop="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/contacto_description"
+                android:textAlignment="center"
+                android:fontFamily="@font/avenir_light"
+                android:textSize="18sp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.65"
+                android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline5"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.20"
+                android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline6"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.40"
+                android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline7"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.60"
+                android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline8"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.80"
+                android:orientation="vertical"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.ContentFrameLayout>

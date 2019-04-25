@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Arges Lab</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="arges_description">
+        Somos una empresa conformada por especialistas en las áreas de desarrollo de software y diseño gráfico.
+        Trabajamos con tecnología de punta para desarrollo de software nativo y experiencia de usuario que se
+        adaptan a las necesidades de nuestros clientes innovadores que quieren aprovechar las herramientas
+        digitales para sacar el máximo provecho de su empresa o negocio.
+    </string>
+    <string name="arges_title">Arges Software Solutions S.A. de C.V.</string>
+    <string name="contacto_correo">Enviar correo.</string>
+    <string name="contacto_description">Estaremos emocionados de trabajar en conjunto para cumplir tus metas.</string>
+    <string name="contacto_title">Contáctanos</string>
+    <string name="producto_description">Contamos con algunos servicios que te ayudarán a mejorar tu experiencia.</string>
+    <string name="producto_title">Servicios Extra</string>
+    <string name="work_title">¿Cómo trabajamos?</string>
+
+</resources>
